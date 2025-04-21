@@ -1,0 +1,21 @@
+{
+  "name": "kmt-backend",
+  "version": "1.0.0",
+  "description": "backend setup for professional use",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+  },
+  "author": "Noman pervaiz",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "mongoose": "^8.10.0",
+    "nodemon": "^3.1.9"
+  }
+}
