@@ -12,7 +12,7 @@ app.use(cors({
 // =======
     // origin : ["https://kmh-front-end.vercel.app"],
 // >>>>>>> 36ad035eb50b58b506e66e9b80cd9921b27ee41f
-    // credentials : true
+    credentials : true
 }))
 app.use(express.json())
 app.use(express.static("public"))
