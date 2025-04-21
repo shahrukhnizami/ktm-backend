@@ -7,7 +7,11 @@ dotenv.config()
 const app  = express()  
 
 app.use(cors({
+// <<<<<<< HEAD
     origin : ["https://kmh-front-end.vercel.app/"],
+// =======
+    // origin : ["https://kmh-front-end.vercel.app"],
+// >>>>>>> 36ad035eb50b58b506e66e9b80cd9921b27ee41f
     // credentials : true
 }))
 app.use(express.json())
