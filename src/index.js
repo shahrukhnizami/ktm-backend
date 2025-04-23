@@ -6,13 +6,17 @@ import router from "./routes/index.js";
 dotenv.config()
 const app  = express()  
 
+const allowedOrigins = [
+  'http://localhost:5173', // Local development
+  'https://kmh-front-end.vercel.app' // Add your production frontend URL
+];
+
 app.use(cors({
-
-    // origin : ["https://kmh-front-end.vercel.app"],
-  origin : "*",
-
-    credentials : true
-}))
+  origin: allowedOrigins,
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json())
 app.use(express.static("public"))
 app.use("/api/v1", router);
