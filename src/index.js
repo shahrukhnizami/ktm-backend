@@ -9,7 +9,7 @@ const app  = express()
 app.use(cors({
 
     // origin : ["https://kmh-front-end.vercel.app"],
-    origin : ["http://localhost:5173"],
+  origin : "*",
 
     credentials : true
 }))
